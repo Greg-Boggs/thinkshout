@@ -1,14 +1,13 @@
 ---
 layout: blog
 body-class: blog-post
-topic:
+topic: strategy
 header-image:
 header-image-alt:
-
 title: The Evolution of a Logo
 author: jessica
 published: true
-featured: false
+featured: true
 short: "Introducing the new and improved ThinkShout logo!"
 tags:
   - Design

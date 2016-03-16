@@ -2,10 +2,12 @@
 # LAYOUT DATA
 layout: case_study
 body-class: case-study colorado-trust
-active: TRUE
-order: 4
-featured: TRUE
+active: true
+order: 2
+featured: true
 # END LAYOUT DATA
+
+title: Colorado Trust
 
 cs-class: colorado-trust
 
@@ -13,7 +15,7 @@ cs-preview:
   image: /assets/images/ts_redesign/case-studies/colorado-trust/header1.jpg
   type: Responsive Drupal Site
   client: "Colorado Trust"
-  description: "Leveraging Drupal and Salesforce to help teachers instill intellectual vigor and curiosity in the world’s secondary school students."
+  description: "Communicating across technological, geographic, and socioeconomic divides to advance opportunities for every Coloradan to be healthy."
 
 cs-header:
   header-image: /assets/images/ts_redesign/case-studies/colorado-trust/header1.jpg
@@ -24,17 +26,21 @@ cs-intro:
   type: ""
   mission: ""
   link-text: "View The Site"
-  link-url: https://www.splcenter.org/
+  link-url: http://www.coloradotrust.org/
   text: |
     [The Colorado Trust](http://www.coloradotrust.org/) is dedicated to ending health inequalities that affect racial, ethnic, low-income, and other vulnerable populations. The Trust came to us looking to communicate more effectively across geographic, socioeconomic, and technological divides.
 
 cs-sections:
-  - section-image: "/assets/images/work/coloradotrust/coloradotrust-hero.jpg"
+  - section-image: "/assets/images/ts_redesign/case-studies/colorado-trust/desktop-mobile.jpg"
     section-image-alt: "Image: "
 
   - section-title: "Planning Ahead"
     section-description: |
       The Trust came to us at an interesting period in its history. They were just kicking off an innovative, and fundamental, change in their funding model and organizational structure. Consequently, we needed to pay close attention in thinking through information architecture to make sure that we were _future proofing_ the new website.
+
+  - section-image: "/assets/images/work/coloradotrust/coloradotrust-search.jpg"
+    section-image-alt: ""
+    section-image-right: true
 
   - section-title: "Speaking to Diverse Audiences"
     section-description: |

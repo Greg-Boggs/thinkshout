@@ -1,113 +1,95 @@
-- name: Southern Poverty Law Center
+- sector: Animal Welfare
+  clients:
+    - name: Humane Society of the United States
+    - name: Oregon Zoo
+    - name: World Wildlife Fund
 
-- name: World Wildlife Fund
+- sector: Culture
+  clients:
+    - name: American Public Media
+    - name: LA Theatre Works
+    - name: Los Angeles Conservancy
+    - name: New Day Films
+    - name: Oregon Metro
+    - name: Portland Opera
+    - name: Travel Portland
 
-- name: Environmental Defense Fund
+- sector: Education
+  clients:
+    - name: Center for Strategic and International Studies
+    - name: Cornell University
+    - name: Facing History and Ourselves
+    - name: GrantStation
+    - name: Learning to Give
+    - name: Lemelson MIT Center for Innovation
+    - name: Pacific Council on International Policy
+    - name: RedesignU
+    - name: Stanford University
+    - name: University of California
 
-- name: Robert Wood Johnson Foundation
+- sector: Environment
+  clients:
+    - name: Baltimore Harborkeeper
+    - name: EcoTrust
+    - name: Environmental Defense Fund
+    - name: The Intertwine Alliance
+    - name: Izaak Walton League of America
+    - name: Mohonk Preserve
+    - name: North Saskatchewan Riverkeeper
+    - name: Ocean Outcomes
+    - name: The Salmon Project
+    - name: Save Our Gulf
+    - name: Scenic Hudson
+    - name: Tree People
+    - name: Trust for Conservation Innovation
+    - name: Wild Salmon Center
 
-- name: Mercy Corps
+- sector: Health and Wellness
+  clients:
+    - name: American Tinnitus Association
+    - name: Cascade Bicycle Club
+    - name: Change Lab Solutions
+    - name: Families USA
+    - name: National Kidney Foundation
+    - name: Portland Design Works
+    - name: Young Survival Coalition
 
-- name: MailChimp
+- sector: Human Services
+  clients:
+    - name: Capital Area Food Bank of DC
+    - name: Capital Area Food Bank of Texas
+    - name: Feeding Texas
+    - name: Mercy Corps
+    - name: Relief International
 
-- name: National Parks Service
+- sector: Philanthropy
+  clients:
+    - name: The Colorado Trust
+    - name: Donors Forum
+    - name: Forum of Regional Associations of Grantmakers
+    - name: Meyer Memorial Trust
+    - name: Nike Foundation
+    - name: Philanthropy Northwest
+    - name: Robert Wood Johnson Foundation
+    - name: Schusterman Foundation
+    - name: The Tides Center
 
-- name: Meyer Memorial Trust
+- sector: Social Justice and Human Rights
+  clients:
+    - name: Intercommunity Justice and Peace Center
+    - name: International Labor Rights Forum
+    - name: Mobility International USA
+    - name: National Center for Youth Law
+    - name: Open Technology Fund
+    - name: Public Health Law Research
+    - name: Rebuilding Together
+    - name: Southern Poverty Law Center
 
-- name: Oregon Zoo
+- sector: Technology
+  clients:
+    - name: iATS Payments
+    - name: MailChimp
 
-- name: Tree People
-
-- name: Oregon Metro
-
-- name: University of California
-
-- name: iATS Payments
-
-- name: Intel
-
-- name: Stanford University
-
-- name: Scenic Hudson
-
-- name: EcoTrust
-
-- name: Ocean Outcomes
-
-- name: Baltimore Harborkeeper
-
-- name: Center for Strategic and International Studies
-
-- name: Intercommunity Justice and Peace Center
-
-- name: The Intertwine Alliance
-
-- name: Izaak Walton League of America
-
-- name: National Kidney Foundation
-
-- name: Los Angeles Conservancy
-
-- name: Mohonk Preserve
-
-- name: Families USA
-
-- name: North Saskatchewan Riverkeeper
-
-- name: Wild Salmon Center
-
-- name: Donors Forum
-
-- name: Save Our Gulf
-
-- name: New Day Films
-
-- name: Facing History and Ourselves
-
-- name: Mobility International USA
-
-- name: Philanthropy Northwest
-
-- name: Portland Opera
-
-- name: The Tides Center
-
-- name: Public Health Law Research
-
-- name: Forum of Regional Associations of Grantmakers
-
-- name: American Public Media
-
-- name: Dehen 1920
-
-- name: The Salmon Project
-
-- name: Vibrant Village
-
-- name: GrantStation
-
-- name: Young Survival Coalition
-
-- name: Nike Foundation
-
-- name: The Colorado Trust
-
-- name: Portland Design Works
-
-- name: American Tinnitus Associations
-
-- name: Capital Area Food Bank of Texas
-
-- name: Feeding Texas
-
-- name: Capital Area Food Bank of DC
-
-- name: Cornell University
-
-- name: International Labor Rights Forum
-
-- name: Lemelson Foundation
-
-- name: Trust for Conservation Innovation
-
-- name: Cascade Bicycle Club
+# Clients without sectors:
+# - name: National Parks Service
+# - name: Lemelson Foundation

@@ -8,7 +8,7 @@ tag: Content Strategy
 leadin: |
   Strategy to Inspire Action
 images:
-  hero: marquee/content-strategy.jpg
+  hero: ts_redesign/expertise/contentstrategy.jpg
   icon: expertise/icon-content-strategy.svg
 blurb: |
   We build websites that inspire action. We help clients reach new audiences and engage more meaningfully with existing stakeholders. Our web development process begins with requirements gathering and content strategy. We then help our clients build comprehensive plans for evaluating the long-term success of their website, messaging, and digital outreach.
@@ -80,7 +80,7 @@ We work with our clients to create cohesive messaging architectures across chann
 
 #### Online Fundraising & Campaigns
 
-Rare is the nonprofit website that convinces a visitor to donate the first time they encounter it. Donor cultivation is part art, part science, part perseverance – but dependant on great content. We work with our clients to develop the strategies and tactics that will make their fundraising more effective.
+Rare is the nonprofit website that convinces a visitor to donate the first time they encounter it. Donor cultivation is part art, part science, part perseverance – but dependent on great content. We work with our clients to develop the strategies and tactics that will make their fundraising more effective.
 
 From segmented welcome series to drip campaigns to direct mail appeals, we’ve helped dozens of organizations improve their fundraising capacity by keeping the focus on the needs of the donors, using every available channel to deliver the compelling content within the framework of their overarching content strategy.
 

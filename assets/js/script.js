@@ -36,37 +36,48 @@
     var windowSize = $(window).width();
 
     if (direction == 'down') {
-      $('header').animate({"padding":"0"}, 600);
+      $('header').animate({"padding":"0"}, 50);
       $('header .header-logo img').animate({"width":"10rem", "margin-top": "6px"}, 600);
-      $('.main-menu li a').animate({"padding": "1.1rem 0.625rem"}, 600);
+      $('.main-menu li a').animate({"padding": "1.1rem 5px"}, 600);
     } else {
       if (windowSize > 979) {
-        $('header').animate({"padding":"2rem 0"}, 600);
+        $('header').animate({"padding":"2rem 0"}, 50);
         $('header .header-logo img').animate({"width":"13rem"}, 600);
-        $('.main-menu li a').animate({"padding": "3.125rem 0.625rem"}, 600);
+        $('.main-menu li a').animate({"padding": "3.125rem 5px"}, 600);
       } else {
-        $('header').animate({"padding":"0.5rem"}, 600);
+        $('header').animate({"padding":"0.5rem"}, 50);
         $('header .header-logo img').animate({"width":"13rem", "margin-top": "0"}, 600);
       }
     }
-  }, { offset: '50px' });
+  }, { offset: 100 });
 
   // Blog posts
   $('.post').matchHeight();
-  $('.blogs-toggle').click(function() {
-    $('.post:nth-child(-n+3)').css({ display: "none" });
-    $('.post').slideToggle(800);
-    $('.post').css({ display: "inline-block"});
+  // Center single blog post
+  var numberOfPost = $('.team-member-blog .post').length;
+  if (numberOfPost === 1 || numberOfPost % 3 === 1) {
+    $('.team-member-blog .post:last-child').addClass('single-center');
+  }
 
+  // Hide blogs greater than 3
+  $('.team-member-blog .post:gt(2)').addClass('reveal');
+
+  $('.see-all-blogs, .view-less-blogs').click(function() {
+    $('.post.reveal').fadeToggle();
     $('body, html').animate({
-      scrollTop: $('.team-member-blog' ).offset().top - 70
-    }, 800, function() {
-    // Animation complete.
-      $('.post').matchHeight();
+        scrollTop: $('.team-member-blog' ).offset().top - 70
+      }, 500, function() {
+        // Animation complete.
+        $('.post').matchHeight();
     });
 
-    $('.see-all-blogs').toggle();
-    $('.view-less-blogs').toggle();
+    if ($('.view-less-blogs:visible').length < 1) {
+        $('.view-less-blogs').fadeIn();
+        $('.see-all-blogs').hide();
+    } else {
+      $('.see-all-blogs').fadeIn();
+      $('.view-less-blogs').hide();
+    }
   });
 
   // Blog Type selector
@@ -76,16 +87,32 @@
   } else {
     blogType = '/blog/topic/' + blogType;
   }
-  console.log(blogType)
+
   $('#blog-filter').chosen({ disable_search: true })
     .val(blogType).trigger("chosen:updated")
     .change(function(evt, params) {
-      if (params.selected != 'all') {
-        window.location.replace(params.selected);
+      if (params === undefined || params.selected === undefined) {
+         window.location.replace($(this).val())
       } else {
-        window.location.replace('/blog/');
+        if (params.selected != 'all') {
+          window.location.replace(params.selected);
+        } else {
+          window.location.replace('/blog/');
+        }
       }
     });
 
+  $('.case-study a, .blog-post a').each(function() {
+     var a = new RegExp('/' + window.location.host + '/');
+     if (!a.test(this.href)) {
+        $(this).attr("target","_blank");
+     }
+  });
+
+  // Add hotspot for featured case study
+  var featuredCSLink = $('.featured-case-study').find('a').attr('href');
+  $('.featured-case-study').click(function() {
+    window.location = featuredCSLink;
+  });
 
 })(jQuery);

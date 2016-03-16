@@ -2,13 +2,13 @@
 title: "Sprinting on Entity Registration"
 layout: blog
 body-class: blog-post
-topic:
+topic: process
 header-image:
 header-image-alt:
 
 author: stephanie
 published: true
-featured: false
+featured: true
 short: We put our heads together to tackle the Entity Registration module.
 tags:
 - Drupal

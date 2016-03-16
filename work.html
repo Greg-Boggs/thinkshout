@@ -2,6 +2,7 @@
 layout: default
 body-class: our-work
 permalink: work/
+title: Our Work
 ---
 <div class="intro">
   <div class="container">
@@ -12,8 +13,7 @@ permalink: work/
   </div>
 </div>
 
-
-{% assign case-studies = site.case_studies | sort: 'order' %}
+{% assign case-studies = (site.case_studies | where: "active", "true" | sort: "order") %}
 <div class="work-listing">
   {% for preview in case-studies %}
     <section class="case-study-header {{ preview.cs-class }}">
@@ -23,7 +23,7 @@ permalink: work/
       <div class="gradient">&nbsp;</div>
       <div class="wrapper">
         <h4>{{ preview.cs-preview.topic }}</h4>
-        <h2>{{ preview.cs-preview.client }}</h4>
+        <a href="{{ site.baseurl }}{{ preview.url }}"><h2>{{ preview.cs-preview.client }}</h2></a>
         <p class="description">{{ preview.cs-preview.description }}</p>
         <a href="{{ site.baseurl }}{{ preview.url }}" class="uppercase-link">Read More<i class="fa fa-caret-right"></i></a>
       </div>
